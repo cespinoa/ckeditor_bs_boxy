@@ -1,0 +1,8 @@
+
+
+
+@media only screen and (min-width: 768px) {
+  .bs_boxy-dialog {
+    min-width: 600px;
+  }
+}

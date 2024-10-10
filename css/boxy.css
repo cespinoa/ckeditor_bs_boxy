@@ -1,0 +1,15 @@
+.ck .ck-widget .ck-widget__type-around__button svg,
+.ck.ck-widget__type-around__button.ck-widget__type-around__button_before svg,
+.ck.ck-widget__type-around__button.ck-widget__type-around__button_after svg{
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    z-index: calc(var(--ck-z-default) + 2);
+    height: 8px;
+    margin-top: 1px;
+    transform: translate(-50%, -50%);
+    transition: transform .5s ease;
+    width: 10px;
+}
+
+

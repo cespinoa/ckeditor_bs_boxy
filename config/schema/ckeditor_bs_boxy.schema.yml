@@ -1,0 +1,13 @@
+# Plugin \Drupal\ckeditor_bs_boxy\Plugin\CKEditor5Plugin\BsBoxy
+ckeditor5.plugin.ckeditor_bs_boxy_boxy:
+  type: mapping
+  label: Bootstrap Boxy
+  mapping:
+    use_cdn:
+      type: boolean
+      label: 'Whether to use CDN or not'
+      constraints:
+        NotNull: [ ]
+    cdn_url:
+      type: string
+      label: 'CDN URL'

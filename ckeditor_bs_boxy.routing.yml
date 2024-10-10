@@ -1,0 +1,8 @@
+ckeditor_bs_boxy.dialog:
+  path: '/ckeditor_bs_boxy/dialog/{editor}'
+  defaults:
+    _form: '\Drupal\ckeditor_bs_boxy\Form\BoxyDialog'
+    _title: 'Boxy Dialog'
+  requirements:
+    _permission: 'access content'
+

@@ -1,0 +1,35 @@
+ckeditor_bs_boxy_boxy:
+  # Configuration that will be sent to CKEditor 5 JavaScript plugins.
+  ckeditor5:
+    plugins:
+      - bootstrapBoxy.BootstrapBoxy
+    config:
+      bootstrapBoxy:
+        openDialog:
+          func:
+            name: Drupal.ckeditor5.openDialog
+            invoke: false
+        dialogSettings:
+          height: 75%
+          width: 75%
+          dialogClass: boxy-widget-modal
+          title: Boxy Settings
+
+  # Configuration that will be used directly by Drupal.
+  drupal:
+    label: Bootstrap Boxy
+    # The library loaded while using the editor.
+    library: ckeditor_bs_boxy/cke5.bsboxy
+    # The library loaded when configuring the text format using this plugin.
+    admin_library: ckeditor_bs_boxy/cke5.admin
+    class: Drupal\ckeditor_bs_boxy\Plugin\CKEditor5Plugin\BsBoxy
+    toolbar_items:
+      bootstrapBoxy:
+        label: Bootstrap Boxy
+    # If the plugin does not provide elements, set this as
+    # `elements: false`
+    elements:
+      - <div>
+
+
+# https://www.svgrepo.com/svg/42556/box

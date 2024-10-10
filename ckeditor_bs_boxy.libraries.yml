@@ -1,0 +1,18 @@
+dialog:
+  version: VERSION
+  css:
+    component:
+      css/dialog.css: { minified: true }
+      css/boxy.css: { minified: true }
+
+cke5.admin:
+  css:
+    theme:
+      css/cke5-admin.css: { }
+
+cke5.bsboxy:
+  js:
+    js/build/bootstrapBoxy.js: { preprocess: false, minified: true }
+  dependencies:
+    - ckeditor5/ckeditor5
+    - ckeditor_bs_boxy/dialog
